@@ -1,7 +1,7 @@
 # shapePlacer
 
 ## description
-A javscript library for placing shapes in the background of your page. 
+A javscript library for generating nice minimal shapes in the background of your page. 
 
 ![An example of the library working](/images/placeholder.png)
 
