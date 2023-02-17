@@ -1,4 +1,4 @@
-# shapePlacer
+# shapeGenerator.js
 
 ## description
 A javscript library for generating nice minimal shapes in the background of your page. 
