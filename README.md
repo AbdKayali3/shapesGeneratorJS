@@ -10,6 +10,8 @@ A javscript library for generating nice minimal shapes in the background of your
 1. Download the library (shapes.js and shapegenerator.js)
 2. add the following to your html file
 ```
+        <script src="shapes.js"></script>
+        <script src="shapegenerator.js"></script>
         <script>
             generateShapes(element, colorList, numberOfShapes, mode, rotation);
         </script>
@@ -29,6 +31,8 @@ A javscript library for generating nice minimal shapes in the background of your
 
 ## Example
 ```
+        <script src="shapes.js"></script>
+        <script src="shapegenerator.js"></script>
         <script>
             let element = document.body;
             let colorList = [
