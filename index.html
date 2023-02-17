@@ -11,21 +11,18 @@
         <div style="height: 400px;"></div>
 
         <script src="shapes.js"></script>
-        <script src="shapeplace.js"></script>
+        <script src="shapegenerator.js"></script>
 
         <script>
-            let body = document.body;
-            // let colorList = [
-            //     "#a29bfe","#ffeaa7","#ff7675","#fd79a8","#ff7675","#55efc4","#636e72"
-            // ];
+            let element = document.body;
             let colorList = [
-                "red","green","blue","yellow","black"
+                "#a29bfe","#ffeaa7","#ff7675","#fd79a8","#ff7675","#55efc4","#636e72"
             ];
             let numberOfShapes = 5;
             let mode = 2;
             console.log("mode: " + mode);
             let rotation = true;
-            placeshapes(body, colorList, numberOfShapes, mode, rotation);
+            generateShapes(element, colorList, numberOfShapes, mode, rotation);
         </script>
     </body>
 </html>

@@ -6,7 +6,7 @@
 
 let shapesList = shapes;
 
-function placeshapes(element = document.body, colorList = ["#a29bfe","#ffeaa7","#ff7675"], numberOfShapes = 5, shapesMode = 2, rotation = false) {
+function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7","#ff7675"], numberOfShapes = 5, shapesMode = 2, rotation = false) {
     let newElement = document.createElement("div");
 
     let rotationList = ["rotate(0deg)", "rotate(45deg)", "rotate(90deg)", "rotate(125deg)", "rotate(180deg)", "rotate(270deg)"];
