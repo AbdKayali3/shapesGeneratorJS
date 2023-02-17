@@ -1,8 +1,9 @@
-// a unction that takes an html element and a list of colors
+// a function that takes an html element and a list of colors
 // the function should make a new elemnt that takes the whole width and hight of the element and have a z-index of -1
 // then the function should place a random object from the list of objects with random color from that list in a random place iside the element
 // the script should place numberOfShapes objects in the element
 // the object created will be from the shapesList and they are svg elements
+// Auther: Abd Kayali
 
 let shapesList = shapes;
 
