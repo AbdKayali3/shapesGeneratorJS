@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shapes</title>
+    </head>
+    <body>
+        
+        <div style="height: 400px;"></div>
+
+        <script src="shapes.js"></script>
+        <script src="shapeplace.js"></script>
+
+        <script>
+            let body = document.body;
+            // let colorList = [
+            //     "#a29bfe","#ffeaa7","#ff7675","#fd79a8","#ff7675","#55efc4","#636e72"
+            // ];
+            let colorList = [
+                "red","green","blue","yellow","black"
+            ];
+            let numberOfShapes = 5;
+            let mode = 2;
+            console.log("mode: " + mode);
+            let rotation = true;
+            placeshapes(body, colorList, numberOfShapes, mode, rotation);
+        </script>
+    </body>
+</html>

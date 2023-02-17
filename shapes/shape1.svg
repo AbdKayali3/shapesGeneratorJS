@@ -1,0 +1,27 @@
+<svg width="159" height="152" viewBox="0 0 159 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_14_1446" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="159" height="152">
+<rect y="7.62939e-06" width="159" height="152" rx="76" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_14_1446)">
+<mask id="mask1_14_1446" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-43" y="-21" width="221" height="97">
+<rect x="-43" y="-21" width="221" height="97" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_14_1446)">
+<line x1="-5" y1="2.50001" x2="175" y2="2.50001" stroke="black"/>
+<line x1="-5" y1="62.5" x2="175" y2="62.5" stroke="black"/>
+<line x1="-5" y1="32.5" x2="175" y2="32.5" stroke="black"/>
+<line x1="-5" y1="17.5" x2="175" y2="17.5" stroke="black"/>
+<line x1="-5" y1="47.5" x2="175" y2="47.5" stroke="black"/>
+<line x1="-5" y1="7.50001" x2="175" y2="7.50001" stroke="black"/>
+<line x1="-5" y1="67.5" x2="175" y2="67.5" stroke="black"/>
+<line x1="-5" y1="37.5" x2="175" y2="37.5" stroke="black"/>
+<line x1="-5" y1="22.5" x2="175" y2="22.5" stroke="black"/>
+<line x1="-5" y1="52.5" x2="175" y2="52.5" stroke="black"/>
+<line x1="-5" y1="12.5" x2="175" y2="12.5" stroke="black"/>
+<line x1="-5" y1="72.5" x2="175" y2="72.5" stroke="black"/>
+<line x1="-5" y1="42.5" x2="175" y2="42.5" stroke="black"/>
+<line x1="-5" y1="27.5" x2="175" y2="27.5" stroke="black"/>
+<line x1="-5" y1="57.5" x2="175" y2="57.5" stroke="black"/>
+</g>
+</g>
+</svg>
