@@ -5,7 +5,8 @@ A javscript library for generating nice minimal shapes in the background of your
 
 ![An example of the library working](/images/placeholder.png)
 
-
+### Version: 0.1.0
+#
 ## How to use
 1. Download the library (shapes.js and shapegenerator.js)
 2. add the following to your html file
