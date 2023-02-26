@@ -7,14 +7,43 @@
 
 let shapesList = shapes;
 
-function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7","#ff7675"], numberOfShapes = 5, shapesMode = 2, rotation = false) {
+function generateShapes(options = {}) {
+// function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7","#ff7675"], numberOfShapes = 5, shapesMode = 2, rotation = false) {
+
+
+    // validation
+    if (options.element == undefined) {
+        options.element = document.body;
+    }
+    if (options.colorList == undefined) {
+        options.colorList = ["#a29bfe","#ffeaa7","#ff7675"];
+    }
+    if (options.numberOfShapes == undefined) {
+        options.numberOfShapes = 5;
+    }
+    if (options.mode == undefined) {
+        options.mode = 1;
+    }
+    if (options.rotation == undefined) {
+        options.rotation = false;
+    }
+
+    // preperation
+    let element = options.element;
+    let colorList = options.colorList;
+    let numberOfShapes = options.numberOfShapes;
+    let shapesMode = options.mode;
+    let rotation = options.rotation;
+
+
+
+
     let newElement = document.createElement("div");
-
     let rotationList = ["rotate(0deg)", "rotate(45deg)", "rotate(90deg)", "rotate(125deg)", "rotate(180deg)", "rotate(270deg)"];
-
     newElement.style.width = element.clientWidth + "px";
     newElement.style.height = element.clientHeight + "px";
     newElement.style.position = "absolute";
+    newElement.style.overflow = "hidden";
     newElement.style.zIndex = -1;
     newElement.style.top = 0;
     newElement.style.left = 0;
@@ -33,7 +62,7 @@ function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7
         shapeElement.style.left =left + "px";
 
 
-        if (shapesMode == 1) {
+        if (shapesMode == 2) {
             shapeElement.style.width = width + "px";
             shapeElement.style.height = height + "px";
             shapeElement.style.backgroundColor = color;
@@ -46,17 +75,18 @@ function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7
         newElement.appendChild(shapeElement);
 
 
-        // console.log(shapesMode);
-        if (shapesMode == 2) {
+        if (shapesMode == 1) {
             let svgElementsList =    [" line", " circle", " path", " rect"];
             for (let k = 0; k < svgElementsList.length; k++) {
                 let svgElement = svgElementsList[k];
                 let ElementsList = document.querySelectorAll("#shape"+i+" svg"+svgElement);
+
                 // console.log("the query is for: #shape"+i+" svg"+svgElement);
                 // console.log(ElementsList);
                 // console.log("-----------------");
                 for (let j = 0; j < ElementsList.length; j++) {
                     let element = ElementsList[j];
+
                     // check if the element is has a fill or stroke attribute
                     // if it has a fill or stroke attribute then change it to the color
 
@@ -67,81 +97,13 @@ function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7
                         element.setAttribute("stroke", color);
                     }
 
-
-                    // element.setAttribute("fill", color);
-                    // element.setAttribute("stroke", color);
                 }
                 
             }
         }
-        // let s = document.querySelectorAll("#shape"+i+" svg");
-        // let l = document.querySelectorAll("#shape"+i+" svg line");
-        // let c = document.querySelectorAll("#shape"+i+" svg circle");
-        // let p = document.querySelectorAll("#shape"+i+" svg path");
-        // console.log(s);
-        // if (s) {
-        //     for (let i = 0; i < s.length; i++) {
-        //         let st = s[i];
-        //         st.setAttribute("fill", color);
-        //         st.setAttribute("stroke", color);
-        //     }
-            
-        // }
-        // if (l) {
-        //     for (let i = 0; i < l.length; i++) {
-        //         let lt = l[i];
-        //         lt.setAttribute("fill", color);
-        //         lt.setAttribute("stroke", color);
-        //     }
-        // }
-        // if (c) {
-        //     for (let i = 0; i < c.length; i++) {
-        //         let ct = c[i];
-        //         ct.setAttribute("fill", color);
-        //         ct.setAttribute("stroke", color);
-        //     }
-        // }
-        // if (p) {
-        //     for (let i = 0; i < p.length; i++) {
-        //         let pt = p[i];
-        //         pt.setAttribute("fill", color);
-        //         pt.setAttribute("stroke", color);
-        //     }
-        // }
-
-        // s.style.fill = color;
-        // s.setAttribute("fill", color);
-        // s.setAttribute("stroke", color);
-        // l.setAttribute("fill", color);
-        // l.setAttribute("stroke", color);
 
     }
 
 
-    // console.log("mode: " + shapesMode);
 }
-
-
-
-// let newElement = document.createElement("div")
-// newElement.style.width = element.clientWidth + "px"
-// newElement.style.height = element.clientHeight + "px"
-// newElement.style.position = "absolute"
-// newElement.style.zIndex = -1
-// newElement.style.top = 0
-// newElement.style.left = 0
-// element.appendChild(newElement)
-// for (let i = 0; i < numberOfShapes; i++) {
-//     let shape = shapesList[Math.floor(Math.random() * shapesList.length)]
-//     let color = colorList[Math.floor(Math.random() * colorList.length)]
-//     let shapeElement = document.createElement("div")
-//     shapeElement.style.position = "absolute"
-//     shapeElement.style.top = Math.floor(Math.random() * element.clientHeight) + "px"
-//     shapeElement.style.left = Math.floor(Math.random() * element.clientWidth) + "px"
-//     shapeElement.style.width = Math.floor(Math.random() * 100) + "px"
-//     shapeElement.style.height = Math.floor(Math.random() * 100) + "px"
-//     shapeElement.style.backgroundColor = color
-//     shapeElement.style.clipPath = shape
-//     newElement.appendChild(shapeElement)
-// }
 

@@ -8,21 +8,21 @@
     </head>
     <body>
         
-        <div style="height: 400px;"></div>
+        <div style="height: 3000px;"></div>
 
         <script src="shapes.js"></script>
         <script src="shapegenerator.js"></script>
 
         <script>
-            let element = document.body;
-            let colorList = [
-                "#a29bfe","#ffeaa7","#ff7675","#fd79a8","#ff7675","#55efc4","#636e72"
-            ];
-            let numberOfShapes = 5;
-            let mode = 2;
-            console.log("mode: " + mode);
-            let rotation = true;
-            generateShapes(element, colorList, numberOfShapes, mode, rotation);
+            generateShapes(
+                {
+                    element: document.body,
+                    colorList: ["#a29bfe","#ffeaa7","#ff7675","#fd79a8","#ff7675","#55efc4","#636e72"],
+                    numberOfShapes: 20,
+                    mode: 2,
+                    rotation: true
+                }
+            );
         </script>
     </body>
 </html>
