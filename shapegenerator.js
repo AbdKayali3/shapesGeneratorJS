@@ -7,33 +7,41 @@
 
 let shapesList = shapes;
 
-function generateShapes(options = {}) {
+function generateShapes(parameter = {}) {
 // function generateShapes(element = document.body, colorList = ["#a29bfe","#ffeaa7","#ff7675"], numberOfShapes = 5, shapesMode = 2, rotation = false) {
 
 
     // validation
-    if (options.element == undefined) {
-        options.element = document.body;
+    // console.log(parameter.element)
+
+    if (parameter == undefined) {
+        parameter = {};
     }
-    if (options.colorList == undefined) {
-        options.colorList = ["#a29bfe","#ffeaa7","#ff7675"];
+    if (parameter.options == undefined) {
+        parameter.options = {};
     }
-    if (options.numberOfShapes == undefined) {
-        options.numberOfShapes = 5;
+    if (parameter.element == undefined) {
+        parameter.element = document.body;
     }
-    if (options.mode == undefined) {
-        options.mode = 1;
+    if (parameter.options.colorList == undefined) {
+        parameter.options.colorList = ["#FF8C7C","#FF8CC8","#CEA0E4","#29C5FF","#37DBD0","#8EFFC1","#FFCF4B","#FFB28B","#D4A281","#9CAAB9","#354546","#606060",];
     }
-    if (options.rotation == undefined) {
-        options.rotation = false;
+    if (parameter.options.numberOfShapes == undefined) {
+        parameter.options.numberOfShapes = 5;
+    }
+    if (parameter.options.mode == undefined) {
+        parameter.options.mode = 1;
+    }
+    if (parameter.options.rotation == undefined) {
+        parameter.options.rotation = false;
     }
 
     // preperation
-    let element = options.element;
-    let colorList = options.colorList;
-    let numberOfShapes = options.numberOfShapes;
-    let shapesMode = options.mode;
-    let rotation = options.rotation;
+    let element = parameter.element;
+    let colorList = parameter.options.colorList;
+    let numberOfShapes = parameter.options.numberOfShapes;
+    let shapesMode = parameter.options.mode;
+    let rotation = parameter.options.rotation;
 
 
 

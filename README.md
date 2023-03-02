@@ -19,7 +19,7 @@ A javscript library for generating nice minimal shapes in the background of your
 ```
 3. run the page and enjoy!
 
-## Parameters
+## Options
 1. element: the element you want to add the shapes to (element object)
 2. colorList: a list of colors you want the shapes to be (an array of colors as strings)
 3. numberOfShapes: the number of shapes you want to be generated in the page (integer number)
