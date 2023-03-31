@@ -20,6 +20,8 @@ A javscript library for generating nice and minimal shapes in the background of 
 ```
 3. run the page and enjoy!
 
+Note: It is recommended to give your element z-index: -1; so the shapes will be underneath everything. THe library add that otumatically but it doesn't work on all the  browsers for now.
+
 &nbsp;
 ## Parameters
 An object containing the following parameters (all optional):
