@@ -1,0 +1,31 @@
+{
+  "name": "shapes-generator",
+  "version": "1.0.1",
+  "description": "A javscript library for generating nice and minimal shapes in the background of your page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdKayali3/shapesGeneratorJS.git"
+  },
+  "keywords": [
+    "shapes",
+    "shapes generator",
+    "generator",
+    "js generator",
+    "background shapes",
+    "background",
+    "minimal shapes",
+    "minimal",
+    "js shapes generator",
+    "js shapes"
+  ],
+  "author": "Abd Kayali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdKayali3/shapesGeneratorJS/issues"
+  },
+  "homepage": "https://github.com/AbdKayali3/shapesGeneratorJS#readme"
+}
