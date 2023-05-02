@@ -5,15 +5,19 @@ A javscript library for generating nice and minimal shapes in the background of 
 
 ![An example of the library working](/images/placeholder.png)
 
-### Version: 0.3.0
+### Version: 1.0.1
 #
 &nbsp;
 ## How to use
-1. Download the library (shapes.js and shapegenerator.js)
-2. add the following to your html file
+1. Install the library:
+- through NPM (recommended) ``` npm install shapes-generator``` then ```const generateShapes = require('shapes-generator'); ```
+- Or Download the library (shapes.js and shapegenerator.js) then
 ```
-        <script src="shapes.js"></script>
-        <script src="shapegenerator.js"></script>
+    <script src="shapes.js"></script>
+    <script src="shapegenerator.js"></script>
+```
+2. add the following to your html file
+``` 
         <script>
             generateShapes();
         </script>
